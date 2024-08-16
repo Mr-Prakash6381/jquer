@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+<body>
+    <h1 class="c">First & Last Element Seletor</h1>
+    <i id="i">Computer Education</i>
+    <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, voluptatum!</p>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $("document").ready(function(){
+            $(".c:first").css("background-color","orange")
+            $(".c:last").css("background-color","orange")
+
+        })
+    </script>
+    
+</body>
+</html>
