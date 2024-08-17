@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove</title>
+    <style>
+        .desing{
+            color: red;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="desing">Add and Remove</h1>
+    <button id="b1">Show</button>
+    <button id="b2">Hide</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $("document").ready(function(){
+           /* $("h1").click(function(){
+               $(this).removeClass("desing")
+            })*/
+           $("#b1").click(function(){
+                $("h1").addClass("desing")
+           })
+           $("#b2").click(function(){
+                $("h1").removeClass("desing")
+           })
+
+        })
+    </script>
+    
+</body>
+</html>
